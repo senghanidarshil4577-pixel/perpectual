@@ -1,0 +1,139 @@
+/* ================================================================
+   BASE — RESET & TYPOGRAPHY
+================================================================ */
+
+/* Modern reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--text-body);
+  background: var(--white);
+  overflow-x: hidden;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color var(--ease);
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul { list-style: none; }
+button { cursor: pointer; font-family: inherit; }
+input, select, textarea { font-family: inherit; }
+
+/* Typography Scale */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+/* Section Label — shared across all sections */
+.section-label {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 14px;
+}
+
+/* Section Heading — shared serif */
+.section-heading {
+  font-family: var(--font-serif);
+  color: var(--primary);
+  line-height: 1.25;
+}
+
+/* Section Subtext */
+.section-subtext {
+  font-size: 15px;
+  color: var(--text-muted);
+  line-height: 1.75;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+/* ================================================================
+   GLOBAL IMAGE FIXES — object-fit & aspect ratio
+================================================================ */
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Prevent image distortion in flex/grid containers */
+.brand-card img,
+.media-card img,
+.blog-card img,
+.award-card img,
+.footprint-card img,
+.about-image-grid img,
+.pcl-card-img img,
+.team-card-img img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Button resets */
+.btn-main,
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 28px;
+  border-radius: var(--radius-full);
+  font-size: 13.5px;
+  font-weight: 600;
+  font-family: var(--font-sans);
+  cursor: pointer;
+  transition: var(--ease);
+  border: 2px solid transparent;
+  text-decoration: none;
+  gap: 6px;
+}
+
+.btn-main {
+  background: var(--accent);
+  color: var(--white);
+  border-color: var(--accent);
+}
+.btn-main:hover {
+  background: var(--accent-light);
+  border-color: var(--accent-light);
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--white);
+  border-color: rgba(255,255,255,0.7);
+}
+.btn-outline:hover {
+  background: var(--white);
+  color: var(--primary);
+  border-color: var(--white);
+}

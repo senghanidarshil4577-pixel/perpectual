@@ -1,0 +1,265 @@
+/* ================================================================
+   RESPONSIVE — COMPLETE BREAKPOINT SYSTEM
+   Party Cruisers Limited — v4.0
+================================================================ */
+
+/* ================================================================
+   KEYFRAMES (shared)
+================================================================ */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(36px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ================================================================
+   DESKTOP LARGE ≥1440px
+================================================================ */
+@media (min-width: 1440px) {
+  .heroSwiper { max-height: 860px; }
+  .blog-grid-4col { grid-template-columns: repeat(4, 1fr); }
+}
+
+/* ================================================================
+   DESKTOP ≥1200px
+================================================================ */
+@media (min-width: 1200px) {
+  .footer-layout { grid-template-columns: 1.8fr 1fr 1fr 1fr; }
+}
+
+/* ================================================================
+   LAPTOP / TABLET-LANDSCAPE ≤1199px
+================================================================ */
+@media (max-width: 1199px) {
+  .footer-layout { grid-template-columns: 1fr 1fr; gap: 32px; }
+  .blog-grid-4col { grid-template-columns: repeat(3, 1fr); }
+  .cta-inner-layout { gap: 32px; }
+  .awards-grid-2col { max-width: 100%; }
+}
+
+/* ================================================================
+   TABLET ≤991px
+================================================================ */
+@media (max-width: 991px) {
+
+  /* Nav */
+  .main-menu { display: none !important; }
+  .icon-btn.menu-toggle-desktop { display: none !important; }
+
+  /* Hero */
+  .heroSwiper { height: 80vh; min-height: 480px; max-height: none; }
+  .hero-content h1,
+  .hero-content .hero-title { font-size: clamp(22px, 5vw, 38px); }
+
+  /* Trust */
+  .trust-bar-section { padding-block: 56px; }
+
+  /* About */
+  .about-section { padding-block: 64px; }
+  .about-image-grid { margin-top: 36px; }
+
+  /* ---- Brands: 2-col top, 1 centered bottom — stays on tablet ---- */
+  .brands-layout {
+    grid-template-columns: 1fr 1fr;
+    max-width: 680px;
+    gap: 20px;
+  }
+  .brands-layout .brand-card:nth-child(3) {
+    max-width: 340px;
+  }
+
+  /* Stack cards */
+  .pcl-stack-card { position: static; margin-bottom: 28px; }
+  .pcl-card-inner { flex-direction: column; }
+  .pcl-card-img { width: 100%; }
+  .pcl-card-img img { min-height: auto; aspect-ratio: 16/9; height: auto; }
+  .pcl-card-content { width: 100%; padding: 28px 28px 32px; }
+
+  /* Awards: 2-col on tablet */
+  .awards-grid-2col {
+    grid-template-columns: 1fr 1fr;
+    max-width: 100%;
+    gap: 16px;
+  }
+
+  /* Footprint */
+  .footprint-card { aspect-ratio: 4/5; }
+
+  /* Video */
+  .margin-left { padding-left: 0; margin-top: 36px; }
+  .pcl-video2 { max-height: 360px; }
+
+  /* Media / As Seen In: 2+1 stays — just compresses */
+  .media-layout {
+    grid-template-columns: 1fr 1fr;
+    max-width: 100%;
+    gap: 20px;
+  }
+  .media-layout .media-card:nth-child(3) {
+    max-width: 360px;
+  }
+
+  /* Blog */
+  .blog-grid-4col { grid-template-columns: repeat(2, 1fr); }
+  .blog-filter { gap: 6px; }
+
+  /* CTA — stack vertically on tablet */
+  .cta-inner-layout {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .cta-intro p { max-width: 100%; }
+  .form-grid { grid-template-columns: 1fr 1fr; }
+
+  /* FAQ */
+  .faq-wrapper { padding-left: 0; margin-top: 36px; }
+
+  /* Tagline popup */
+  .tagline-grid { grid-template-columns: 1fr; }
+  .tagline-image { display: none; }
+
+  /* Footer */
+  .footer-layout { grid-template-columns: 1fr 1fr; gap: 28px; }
+
+  /* Page Hero */
+  .page-hero { min-height: 320px; }
+}
+
+/* ================================================================
+   MOBILE-LANDSCAPE / PHABLET ≤767px
+================================================================ */
+@media (max-width: 767px) {
+
+  /* Container */
+  :root { --container-pad: 16px; }
+
+  /* Hero */
+  .heroSwiper { height: 88vh; min-height: 420px; }
+  .hero-slider-section { padding-top: 68px; }
+  .hero-content h1,
+  .hero-content .hero-title { font-size: clamp(20px, 5.5vw, 30px); }
+  .hero-highlight { font-size: 13.5px; }
+  .hero-btns .btn-main { display: none !important; }
+
+  /* Trust */
+  .trust-item h2 { font-size: 40px; }
+
+  /* Logo slider */
+  .vvLogoSliderUnique img { max-width: 100px; }
+
+  /* About image grid */
+  .col-8 { flex: 0 0 100%; max-width: 100%; }
+  .col-4 { flex: 0 0 50%; max-width: 50%; }
+
+  /* ---- Brands: single column on mobile ---- */
+  .brands-layout {
+    grid-template-columns: 1fr;
+    max-width: 420px;
+  }
+  .brands-layout .brand-card:nth-child(3) {
+    grid-column: auto;
+    max-width: 100%;
+  }
+
+  /* ---- Awards: single column on mobile ---- */
+  .awards-grid-2col {
+    grid-template-columns: 1fr;
+    max-width: 440px;
+    margin-inline: auto;
+  }
+
+  /* ---- Media: single column on mobile ---- */
+  .media-layout {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+    margin-inline: auto;
+  }
+  .media-layout .media-card:nth-child(3) {
+    grid-column: auto;
+    max-width: 100%;
+  }
+
+  /* Blog */
+  .blog-grid-4col { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .blog-filter { gap: 6px; }
+  .filter-btn { padding: 6px 14px; font-size: 12px; }
+
+  /* CTA */
+  .cta-inner-layout { gap: 24px; }
+  .form-grid { grid-template-columns: 1fr; }
+  .form-grid .full { grid-column: 1 / -1; }
+  .cta-form-box { padding: 28px 22px; }
+
+  /* Footer */
+  .footer-layout { grid-template-columns: 1fr; gap: 24px; }
+  .footer-layout > div:first-child { order: -1; }
+
+  /* Video */
+  .pcl-video2 { max-height: 300px; }
+  .pcl-heading2 { font-size: 26px; }
+
+  /* FAQ */
+  .faq-question { font-size: 13.5px; }
+
+  /* Page Hero */
+  .page-hero { min-height: 280px; }
+  .page-hero-content h1 { font-size: 28px; }
+}
+
+/* ================================================================
+   MOBILE ≤480px
+================================================================ */
+@media (max-width: 480px) {
+
+  /* Hero */
+  .heroSwiper { height: 92vh; }
+  .hero-content { padding-right: 0; }
+  .hero-btns { gap: 10px; }
+
+  /* Trust */
+  .trust-item { padding: 16px 10px; }
+
+  /* Blog */
+  .blog-grid-4col { grid-template-columns: 1fr; max-width: 380px; margin-inline: auto; }
+
+  /* Brands */
+  .brands-layout { max-width: 360px; }
+
+  /* Stack cards */
+  .pcl-card-content { padding: 22px 18px 26px; }
+
+  /* Form */
+  .cta-form-box { padding: 22px 16px; }
+
+  /* Awards */
+  .award-card { padding: 22px 20px; }
+
+  /* Footer */
+  .footer-layout { gap: 20px; }
+
+  /* Scroll/WA float */
+  .scroll-top { right: 80px; bottom: 20px; }
+  .whats-app-float { bottom: 20px; right: 20px; }
+  .whats-app-float img { width: 44px; height: 44px; }
+
+  /* Media */
+  .media-layout { max-width: 360px; }
+
+  /* CTA form box */
+  .cta-inner-layout { gap: 20px; }
+  .cta-form-box h4 { font-size: 20px; }
+}
+
+/* ================================================================
+   SWIPER BUTTON OVERRIDES
+================================================================ */
+.swiper-button-next::after,
+.swiper-button-prev::after { font-size: 18px !important; }
+
+@media (max-width: 767px) {
+  .swiper-button-next,
+  .swiper-button-prev { display: none !important; }
+}
