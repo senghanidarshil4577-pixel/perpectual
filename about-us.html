@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>About Us — Party Cruisers Limited</title>
+<meta name="description" content="Since 1994, Party Cruisers Limited has been India's premier luxury events and wedding company. NSE-listed, with offices across India and the Middle East.">
+<meta property="og:title" content="About Us — Party Cruisers Limited">
+<meta property="og:description" content="India's premier luxury events and wedding company since 1994.">
+<meta name="keywords" content="party cruisers limited, about us, luxury events india, wedding company, NSE listed">
+<meta name="robots" content="INDEX,FOLLOW">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/pcl_favicon.png">
+<meta name="theme-color" content="#222e63">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+/* ================================================================
+   VARIABLES
+================================================================ */
+:root {
+  --primary:       #222e63;
+  --primary-light: #2e3f8a;
+  --accent:        #c9a84c;
+  --accent-light:  #e2c270;
+  --dark:          #0f0f1a;
+  --white:         #ffffff;
+  --light-bg:      #f9f7f4;
+  --text-body:     #333333;
+  --text-muted:    #666666;
+  --font-serif:    'Playfair Display', Georgia, serif;
+  --font-sans:     'Poppins', system-ui, sans-serif;
+  --ease:          0.3s ease;
+  --ease-slow:     0.5s ease;
+  --radius-sm:     8px;
+  --radius-md:     12px;
+  --radius-lg:     20px;
+  --radius-xl:     28px;
+  --radius-full:   50px;
+  --shadow-sm:     0 4px 20px rgba(0,0,0,0.08);
+  --shadow-md:     0 8px 32px rgba(0,0,0,0.10);
+  --shadow-lg:     0 16px 48px rgba(0,0,0,0.14);
+  --nav-height:    68px;
+  --space-lg:      40px;
+  --space-xl:      60px;
+  --space-2xl:     80px;
+  --container-max: 1240px;
+  --container-pad: clamp(16px, 4vw, 40px);
+}
+
+/* ================================================================
+   RESET
+================================================================ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:var(--font-sans);color:var(--text-body);background:var(--white);overflow-x:hidden;line-height:1.6;-webkit-font-smoothing:antialiased;padding-top:var(--nav-height)}
+a{text-decoration:none;color:inherit;transition:color var(--ease)}
+img,video{max-width:100%;height:auto;display:block}
+ul{list-style:none}
+button{cursor:pointer;font-family:inherit;border:none;background:none}
+input,select,textarea{font-family:inherit}
+h1,h2,h3,h4,h5,h6{line-height:1.2;font-weight:700}
+
+/* ================================================================
+   LAYOUT
+================================================================ */
+.container{max-width:var(--container-max);margin-inline:auto;padding-inline:var(--container-pad);width:100%}
+.container-fluid{width:100%;padding-inline:var(--container-pad)}
+
+/* ================================================================
+   PROGRESS BAR
+================================================================ */
+.hov-progress-bar{position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,var(--primary),var(--accent));z-index:99999;pointer-events:none;transition:width .1s linear}
+
+/* ================================================================
+   SIDE MENU
+================================================================ */
+.sidemenu-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:9998;backdrop-filter:blur(2px)}
+.sidemenu-overlay.active{display:block}
+.sidemenu-wrapper{position:fixed;top:0;right:-360px;width:320px;height:100%;background:var(--white);z-index:9999;padding:36px 28px;transition:right .4s cubic-bezier(.77,0,.175,1);box-shadow:-8px 0 40px rgba(0,0,0,.12);overflow-y:auto}
+.sidemenu-wrapper.open{right:0}
+.closeButton{background:none;border:none;font-size:22px;color:#444;display:block;margin-left:auto;margin-bottom:24px;padding:4px;transition:color var(--ease);cursor:pointer}
+.closeButton:hover{color:var(--primary)}
+.footer-logo{margin-bottom:18px}
+.footer-logo img{max-width:150px}
+.about-text{font-size:13.5px;color:var(--text-muted);line-height:1.75;margin-bottom:18px}
+.widget_title{font-family:var(--font-serif);font-size:17px;color:var(--primary);margin-bottom:10px;margin-top:24px;font-weight:600}
+.widget_nav_menu .menu li{margin-bottom:8px}
+.widget_nav_menu .menu li a{font-size:14px;color:var(--text-muted);display:block;padding:3px 0;transition:var(--ease)}
+.widget_nav_menu .menu li a:hover{color:var(--primary);padding-left:6px}
+.social-btn{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
+.social-btn a{width:36px;height:36px;border-radius:50%;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;transition:var(--ease)}
+.social-btn a:hover{background:var(--accent);transform:translateY(-2px)}
+
+/* ================================================================
+   MOBILE MENU
+================================================================ */
+.mobile-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:9997}
+.mobile-overlay.active{display:block}
+.mobile-menu-wrapper{position:fixed;top:0;left:-100%;width:280px;height:100%;background:var(--dark);z-index:9999;transition:left .4s cubic-bezier(.77,0,.175,1);padding:36px 0;overflow-y:auto}
+.mobile-menu-wrapper.open{left:0}
+.mobile-menu-area{text-align:center}
+.mobile-menu-area .close-mobile{background:none;border:none;color:#fff;font-size:22px;display:block;margin:0 auto 24px;padding:4px;cursor:pointer}
+.mobile-logo{margin-bottom:28px}
+.mobile-logo img{max-width:130px;margin:0 auto}
+.mobile-menu ul li{border-bottom:1px solid rgba(255,255,255,.08)}
+.mobile-menu ul li a{display:block;padding:14px 28px;color:rgba(255,255,255,.82);font-size:14px;font-weight:500;transition:var(--ease)}
+.mobile-menu ul li a:hover,.mobile-menu ul li a.active{color:var(--accent);padding-left:38px}
+
+/* ================================================================
+   NAVBAR
+================================================================ */
+.nav-header{position:relative;z-index:100}
+.sticky-wrapper{position:fixed;top:0;left:0;width:100%;z-index:999}
+.menu-area{background:rgba(255,255,255,.97);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);padding:10px 0;box-shadow:0 2px 20px rgba(0,0,0,.07);transition:box-shadow var(--ease),padding var(--ease),background var(--ease)}
+.menu-area.scrolled{padding-top:8px;padding-bottom:8px;background:rgba(255,255,255,.98);box-shadow:0 4px 32px rgba(0,0,0,.13)}
+.menu-area .container-fluid{padding-inline:32px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.header-logo{flex-shrink:0;display:flex;align-items:center}
+.header-logo img{height:44px;max-height:44px;width:auto;max-width:200px;object-fit:contain;display:block;transition:height .4s ease,max-height .4s ease}
+.menu-area.scrolled .header-logo img{height:36px;max-height:36px}
+.main-menu{display:none}
+@media(min-width:992px){.main-menu{display:block}}
+.main-menu ul{display:flex;align-items:center;gap:2px}
+.main-menu ul li a{padding:8px 14px;font-size:13.5px;font-weight:500;color:var(--text-body);border-radius:6px;transition:var(--ease);white-space:nowrap;display:block;position:relative}
+.main-menu ul li a::after{content:'';position:absolute;bottom:4px;left:14px;right:14px;height:1.5px;background:var(--accent);transform:scaleX(0);transform-origin:center;transition:transform .3s cubic-bezier(.22,1,.36,1)}
+.main-menu ul li a:hover,.main-menu ul li a.active{color:var(--primary)}
+.main-menu ul li a:hover::after,.main-menu ul li a.active::after{transform:scaleX(1)}
+.icon-btn{background:none;border:none;font-size:21px;color:var(--primary);padding:8px;display:flex;align-items:center;cursor:pointer}
+.nav-right{display:flex;align-items:center;gap:8px}
+@media(min-width:992px){.mobile-toggle{display:none!important}}
+
+/* ================================================================
+   ANIMATIONS
+================================================================ */
+@keyframes hovFadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeLeft{from{opacity:0;transform:translateX(40px)}to{opacity:1;transform:translateX(0)}}
+@keyframes fadeRight{from{opacity:0;transform:translateX(-40px)}to{opacity:1;transform:translateX(0)}}
+@keyframes scaleIn{from{opacity:0;transform:scale(.92)}to{opacity:1;transform:scale(1)}}
+@keyframes floatY{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes lineExpand{from{transform:scaleX(0);transform-origin:left center}to{transform:scaleX(1);transform-origin:left center}}
+@keyframes countUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+
+.reveal{opacity:0;transform:translateY(32px);will-change:opacity,transform;transition:opacity .72s cubic-bezier(.22,1,.36,1),transform .72s cubic-bezier(.22,1,.36,1)}
+.reveal.is-visible{opacity:1;transform:translateY(0)}
+.reveal-left{opacity:0;transform:translateX(-40px);transition:opacity .72s cubic-bezier(.22,1,.36,1),transform .72s cubic-bezier(.22,1,.36,1)}
+.reveal-left.is-visible{opacity:1;transform:translateX(0)}
+.reveal-right{opacity:0;transform:translateX(40px);transition:opacity .72s cubic-bezier(.22,1,.36,1),transform .72s cubic-bezier(.22,1,.36,1)}
+.reveal-right.is-visible{opacity:1;transform:translateX(0)}
+.reveal.delay-1{transition-delay:.08s}
+.reveal.delay-2{transition-delay:.16s}
+.reveal.delay-3{transition-delay:.24s}
+.reveal.delay-4{transition-delay:.32s}
+.reveal.delay-5{transition-delay:.4s}
+
+.header-logo img{transition:opacity .4s ease,transform .4s cubic-bezier(.34,1.56,.64,1),filter .4s ease}
+.header-logo img:hover{transform:scale(1.04);filter:drop-shadow(0 4px 12px rgba(201,168,76,.25))}
+
+.img-hover-zoom{overflow:hidden;border-radius:inherit}
+.img-hover-zoom img{transition:transform .55s cubic-bezier(.22,1,.36,1),filter .55s ease;will-change:transform}
+.img-hover-zoom:hover img{transform:scale(1.07);filter:brightness(1.04)}
+
+.card-lift{transition:transform .35s cubic-bezier(.22,1,.36,1),box-shadow .35s ease;will-change:transform}
+.card-lift:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
+
+.anim-line{display:block;height:2px;background:var(--accent);transform:scaleX(0);transform-origin:left center;margin:14px 0 22px}
+.anim-line.is-visible{animation:lineExpand .7s cubic-bezier(.22,1,.36,1) forwards}
+
+.hov-intro-logo-wrap{opacity:0;transform:translateX(-32px);transition:opacity .75s cubic-bezier(.22,1,.36,1),transform .75s cubic-bezier(.22,1,.36,1)}
+.hov-intro-logo-wrap.is-visible{opacity:1;transform:translateX(0);animation:floatY 6s .75s ease-in-out infinite}
+.hov-intro-content{opacity:0;transform:translateX(32px);transition:opacity .75s .15s cubic-bezier(.22,1,.36,1),transform .75s .15s cubic-bezier(.22,1,.36,1)}
+.hov-intro-content.is-visible{opacity:1;transform:translateX(0)}
+
+.hov-form{opacity:0;transform:translateY(28px);transition:opacity .7s cubic-bezier(.22,1,.36,1),transform .7s cubic-bezier(.22,1,.36,1)}
+.hov-form.is-visible{opacity:1;transform:translateY(0)}
+.hov-contact-heading{opacity:0;transform:translateY(20px);transition:opacity .6s cubic-bezier(.22,1,.36,1),transform .6s cubic-bezier(.22,1,.36,1)}
+.hov-contact-heading.is-visible{opacity:1;transform:translateY(0)}
+
+.hovTestiSwiper .swiper-slide{opacity:0;transform:translateY(18px);transition:opacity .5s ease,transform .5s ease}
+.hovTestiSwiper .swiper-slide-visible{opacity:1;transform:translateY(0)}
+
+@keyframes pulseGold{0%,100%{box-shadow:0 0 0 0 rgba(201,168,76,0)}50%{box-shadow:0 0 0 8px rgba(201,168,76,.18)}}
+.whats-app-float{animation:pulseGold 3s 2s ease-in-out infinite}
+
+@media(prefers-reduced-motion:reduce){
+  .reveal,.reveal-left,.reveal-right,.hov-intro-logo-wrap,.hov-intro-content,.hov-form,.hov-contact-heading{opacity:1;transform:none;animation:none;transition:none}
+  .img-hover-zoom img,.card-lift{transition:none}
+}
+
+/* ================================================================
+   PAGE HERO
+================================================================ */
+.hov-hero{min-height:clamp(360px,52vw,580px);background:linear-gradient(135deg,#08080f 0%,#1a1440 50%,#222e63 100%);background-size:cover;background-position:center 30%;position:relative;display:flex;align-items:center}
+.hov-hero::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(15,10,30,.85) 0%,rgba(34,46,99,.45) 100%)}
+.hov-hero::after{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 20% 50%,rgba(201,168,76,.08) 0%,transparent 50%),radial-gradient(circle at 80% 20%,rgba(201,168,76,.06) 0%,transparent 40%);pointer-events:none}
+.hov-hero .container{position:relative;z-index:2}
+.hov-hero-content{color:var(--white);max-width:640px;animation:hovFadeUp .9s ease both}
+.hov-hero-content .hov-sub{display:inline-block;font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:14px}
+.hov-hero-content h1{font-family:var(--font-serif);font-size:clamp(30px,5vw,58px);font-weight:700;line-height:1.15;margin-bottom:16px;text-shadow:0 2px 20px rgba(0,0,0,.45)}
+.hov-hero-content .hov-tagline{font-size:clamp(13px,1.6vw,16px);color:rgba(255,255,255,.82);line-height:1.7;margin-bottom:28px;font-style:italic;letter-spacing:.5px}
+.hov-breadcrumb{display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(255,255,255,.55)}
+.hov-breadcrumb a{color:var(--accent);transition:opacity var(--ease)}
+.hov-breadcrumb a:hover{opacity:.8}
+.hov-breadcrumb .sep{color:rgba(255,255,255,.3)}
+
+/* ================================================================
+   INTRO / ABOUT SECTION
+================================================================ */
+.hov-intro-section{padding-block:var(--space-2xl);background:var(--white)}
+.hov-intro-inner{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,80px);align-items:center}
+.hov-intro-logo-wrap{display:flex;align-items:center;justify-content:center;padding:clamp(24px,4vw,48px);background:var(--light-bg);border-radius:var(--radius-xl);position:relative;overflow:hidden}
+.hov-intro-logo-wrap::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(201,168,76,.08) 0%,transparent 70%);pointer-events:none}
+.hov-intro-logo-wrap img{max-width:340px;width:100%;height:auto;object-fit:contain;position:relative;z-index:1}
+.hov-intro-content .hov-sub-label{display:inline-block;font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:12px}
+.hov-intro-content h2{font-family:var(--font-serif);font-size:clamp(26px,3.5vw,40px);color:var(--primary);line-height:1.2;margin-bottom:8px}
+.hov-intro-content .hov-craft{font-size:13px;letter-spacing:3px;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:20px}
+.hov-intro-content p{font-size:15px;color:var(--text-muted);line-height:1.85;margin-bottom:20px}
+.hov-vm-row{display:flex;flex-direction:column;gap:18px;margin-top:8px}
+.hov-vm-item{display:flex;align-items:flex-start;gap:14px;padding:16px 18px;background:var(--light-bg);border-radius:var(--radius-md);border-left:3px solid var(--accent)}
+.hov-vm-item .vm-icon{width:36px;height:36px;min-width:36px;background:var(--primary);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--accent);font-size:14px}
+.hov-vm-item h5{font-size:13px;font-weight:700;color:var(--primary);margin-bottom:3px;font-family:var(--font-serif)}
+.hov-vm-item p{font-size:13px;color:var(--text-muted);line-height:1.65;margin:0}
+.hov-social-row{display:flex;gap:10px;margin-top:20px}
+.hov-social-row a{width:38px;height:38px;border-radius:50%;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;transition:background var(--ease),transform var(--ease)}
+.hov-social-row a:hover{background:var(--accent);transform:translateY(-2px)}
+
+/* ================================================================
+   BRAND DIVISION
+================================================================ */
+.hov-brands-section{padding-block:var(--space-2xl);background:var(--light-bg)}
+.section-heading-wrap{text-align:center;margin-bottom:40px}
+.section-heading-wrap .hov-sub-label{display:inline-block;font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:10px}
+.section-heading-wrap h2{font-family:var(--font-serif);font-size:clamp(24px,3.5vw,38px);color:var(--primary)}
+.hov-brands-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:900px;margin-inline:auto}
+.hov-brand-card{background:var(--white);border-radius:var(--radius-lg);padding:clamp(24px,3vw,36px);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;border:1.5px solid rgba(201,168,76,.15);transition:var(--ease),box-shadow var(--ease);min-height:140px}
+.hov-brand-card:hover{border-color:var(--accent);box-shadow:var(--shadow-md);transform:translateY(-4px)}
+.hov-brand-card img{max-height:60px;width:auto;max-width:160px;object-fit:contain;filter:grayscale(20%);transition:filter var(--ease)}
+.hov-brand-card:hover img{filter:grayscale(0%)}
+
+/* ================================================================
+   COUNTERS
+================================================================ */
+.hov-counter-section{padding-block:var(--space-xl);background:linear-gradient(135deg,var(--primary) 0%,#1a1440 100%);position:relative;overflow:hidden}
+.hov-counter-section::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 50%,rgba(201,168,76,.1) 0%,transparent 60%);pointer-events:none}
+.hov-counters-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;position:relative;z-index:1}
+.hov-counter-card{text-align:center;padding:28px 16px}
+.hov-counter-card h3{font-family:var(--font-serif);font-size:clamp(36px,5vw,56px);color:var(--accent);font-weight:800;line-height:1;margin-bottom:10px}
+.hov-counter-card h3 span.plus{font-size:clamp(22px,3vw,32px)}
+.hov-counter-card p{font-size:13px;color:rgba(255,255,255,.72);letter-spacing:1px;text-transform:uppercase;font-weight:500;line-height:1.5}
+.hov-counter-divider{width:1px;background:rgba(255,255,255,.12);height:60px;margin:auto}
+
+/* ================================================================
+   AWARDS
+================================================================ */
+.hov-awards-section{padding-block:var(--space-2xl);background:var(--white)}
+.hov-awards-grid{display:grid;grid-template-columns:1fr auto;gap:clamp(32px,5vw,64px);align-items:start}
+.hov-award-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.hov-award-card{background:var(--light-bg);border-radius:var(--radius-md);padding:20px;border:1.5px solid rgba(201,168,76,.12);transition:var(--ease),box-shadow var(--ease),border-color var(--ease)}
+.hov-award-card:hover{border-color:var(--accent);box-shadow:var(--shadow-sm);transform:translateY(-3px)}
+.hov-award-meta{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.hov-award-tier{font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:3px 10px;border-radius:var(--radius-full)}
+.tier-platinum{background:linear-gradient(135deg,#e8e0d0,#c8bda8);color:#5a4a3a}
+.tier-gold{background:linear-gradient(135deg,#f5d97e,#c9a84c);color:#6a4a10}
+.tier-silver{background:linear-gradient(135deg,#e0e0e0,#b0b0b0);color:#4a4a4a}
+.tier-bronze{background:linear-gradient(135deg,#d4956a,#b5693e);color:#fff}
+.tier-runner{background:linear-gradient(135deg,#c9a84c,#997a30);color:#fff}
+.hov-award-year{font-size:12px;color:var(--text-muted);font-weight:600}
+.hov-award-card h4{font-family:var(--font-serif);font-size:14px;color:var(--primary);font-weight:700;margin-bottom:5px;line-height:1.35}
+.hov-award-card p{font-size:12px;color:var(--text-muted);margin:0}
+.hov-awards-trophy{display:flex;align-items:center;justify-content:center}
+.hov-awards-trophy img{max-width:280px;border-radius:var(--radius-lg);box-shadow:var(--shadow-lg)}
+
+/* ================================================================
+   TEAM / FOUNDERS
+================================================================ */
+.hov-team-section{padding-block:var(--space-2xl);background:var(--light-bg)}
+.hov-founders-banner{background:linear-gradient(135deg,var(--primary) 0%,#1a1440 100%);border-radius:var(--radius-xl);overflow:hidden;margin-bottom:var(--space-xl);position:relative}
+.hov-founders-banner::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 80% 50%,rgba(201,168,76,.08) 0%,transparent 60%);pointer-events:none}
+.hov-founders-inner{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center;padding:clamp(32px,4vw,56px)}
+.hov-founders-text{position:relative;z-index:1}
+.hov-founders-text .hov-sub-label{color:var(--accent-light);margin-bottom:10px;display:inline-block;font-size:11px;letter-spacing:4px;text-transform:uppercase;font-weight:600}
+.hov-founders-text h2{font-family:var(--font-serif);font-size:clamp(22px,3vw,34px);color:#fff;margin-bottom:6px}
+.hov-founders-text .founders-name{font-size:15px;color:rgba(255,255,255,.7);margin-bottom:18px;font-style:italic}
+.hov-founders-text p{font-size:14.5px;color:rgba(255,255,255,.75);line-height:1.85;max-width:600px}
+.hov-founders-img{position:relative;z-index:1}
+.hov-founders-img img{max-width:240px;border-radius:var(--radius-lg);box-shadow:0 16px 48px rgba(0,0,0,.35)}
+.hov-team-photo img{width:100%;border-radius:var(--radius-xl);box-shadow:var(--shadow-lg)}
+
+/* ================================================================
+   OFFICES
+================================================================ */
+.hov-offices-section{padding-block:var(--space-xl);background:linear-gradient(135deg,var(--primary) 0%,#1a1440 100%);position:relative;overflow:hidden}
+.hov-offices-section::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 70% 50%,rgba(201,168,76,.08) 0%,transparent 55%);pointer-events:none}
+.hov-offices-inner{display:grid;grid-template-columns:220px 1fr 1fr;gap:0;align-items:center;position:relative;z-index:1}
+.hov-offices-heading{padding-right:40px;border-right:1px solid rgba(255,255,255,.12)}
+.hov-offices-heading h2{font-family:var(--font-serif);font-size:clamp(24px,3vw,38px);color:var(--accent);line-height:1.2}
+.hov-office-block{padding-left:40px}
+.hov-office-block h5{font-family:var(--font-serif);font-size:16px;color:var(--white);margin-bottom:8px;font-weight:600}
+.hov-office-block p{font-size:13.5px;color:rgba(255,255,255,.65);line-height:1.8;margin-bottom:4px}
+.hov-office-sep{width:32px;height:2px;background:var(--accent);margin-bottom:16px;border-radius:2px}
+
+/* ================================================================
+   CTA SECTION
+================================================================ */
+.hov-cta-section{padding-block:var(--space-2xl);background:var(--white);position:relative;overflow:hidden}
+.hov-cta-section::before{content:'';position:absolute;top:-100px;left:-100px;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(201,168,76,.06) 0%,transparent 70%);pointer-events:none}
+.hov-cta-inner{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,80px);align-items:center}
+.hov-cta-images{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.hov-cta-img{border-radius:var(--radius-lg);overflow:hidden}
+.hov-cta-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}
+.hov-cta-img:hover img{transform:scale(1.05)}
+.hov-cta-img:nth-child(1){aspect-ratio:1;grid-row:1/3}
+.hov-cta-img:nth-child(2){aspect-ratio:3/2}
+.hov-cta-img:nth-child(3){aspect-ratio:3/2}
+.hov-cta-content{text-align:center}
+.hov-cta-content .hov-sub-label{display:inline-block;font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:14px}
+.hov-cta-content h2{font-family:var(--font-serif);font-size:clamp(26px,3.5vw,40px);color:var(--primary);line-height:1.25;margin-bottom:18px}
+.hov-cta-content p{font-size:15px;color:var(--text-muted);line-height:1.8;margin-bottom:28px}
+.hov-btn{display:inline-flex;align-items:center;gap:8px;padding:14px 36px;background:var(--primary);color:#fff;border-radius:var(--radius-full);font-size:14px;font-weight:600;font-family:var(--font-sans);cursor:pointer;transition:background var(--ease),transform var(--ease),box-shadow var(--ease);letter-spacing:.5px;border:none}
+.hov-btn:hover{background:var(--primary-light);transform:translateY(-2px);box-shadow:0 8px 24px rgba(34,46,99,.22)}
+.hov-btn-outline{background:transparent;color:var(--primary);border:2px solid var(--primary)}
+.hov-btn-outline:hover{background:var(--primary);color:#fff}
+
+/* ================================================================
+   CONTACT FORM
+================================================================ */
+.hov-contact-section{padding-block:var(--space-2xl);background:#BFDAB2;position:relative;overflow:hidden}
+.hov-contact-section::before{content:'';position:absolute;top:-80px;right:-80px;width:320px;height:320px;border-radius:50%;background:rgba(255,255,255,.12);pointer-events:none}
+.hov-contact-section::after{content:'';position:absolute;bottom:-60px;left:-60px;width:220px;height:220px;border-radius:50%;background:rgba(255,255,255,.08);pointer-events:none}
+.hov-contact-inner{position:relative;z-index:1}
+.hov-contact-heading{text-align:center;margin-bottom:var(--space-lg)}
+.hov-contact-heading h2{font-family:var(--font-serif);font-size:clamp(26px,3.5vw,40px);color:#fff;font-weight:700}
+.hov-contact-heading p{color:rgba(255,255,255,.8);font-size:15px;margin-top:8px}
+.hov-form-wrap{background:rgba(255,255,255,.92);border-radius:var(--radius-xl);padding:clamp(28px,4vw,48px);box-shadow:0 16px 64px rgba(0,0,0,.10);max-width:960px;margin-inline:auto}
+.hov-form-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px 24px}
+.hov-form-group{display:flex;flex-direction:column;gap:6px}
+.hov-form-group label{font-size:12px;font-weight:600;color:var(--primary);letter-spacing:.5px;text-transform:uppercase}
+.hov-form-group .field-wrap{position:relative}
+.hov-form-group .field-icon{position:absolute;left:12px;top:50%;transform:translateY(-50%);color:var(--text-muted);font-size:13px;pointer-events:none}
+.hov-form-group input,.hov-form-group select,.hov-form-group textarea{width:100%;padding:11px 12px 11px 34px;border:1.5px solid #ddd;border-radius:var(--radius-sm);font-size:14px;font-family:var(--font-sans);color:var(--text-body);background:#fff;transition:border-color var(--ease),box-shadow var(--ease);appearance:none}
+.hov-form-group input:focus,.hov-form-group select:focus,.hov-form-group textarea:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 3px rgba(34,46,99,.08)}
+.hov-form-group select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24'%3E%3Cpath fill='%23666' d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 10px center;padding-right:30px;cursor:pointer}
+.hov-form-group textarea{padding:11px 12px 11px 34px;min-height:90px;resize:vertical}
+.hov-form-error{font-size:11px;color:#e74c3c;min-height:16px;margin-top:2px}
+.hov-form-submit{grid-column:1/-1;text-align:center;margin-top:8px}
+.hov-submit-btn{display:inline-flex;align-items:center;gap:8px;padding:14px 48px;background:var(--primary);color:#fff;border:none;border-radius:var(--radius-full);font-size:14px;font-weight:600;font-family:var(--font-sans);cursor:pointer;transition:background var(--ease),transform var(--ease),box-shadow var(--ease);letter-spacing:.5px;position:relative;overflow:hidden}
+.hov-submit-btn::before{content:'';position:absolute;inset:0;background:linear-gradient(120deg,rgba(255,255,255,0) 30%,rgba(255,255,255,.18) 50%,rgba(255,255,255,0) 70%);background-size:200% 100%;background-position:-200% center;transition:background-position .55s ease;pointer-events:none}
+.hov-submit-btn:hover::before{background-position:200% center}
+.hov-submit-btn:hover{background:var(--primary-light);transform:translateY(-2px);box-shadow:0 8px 24px rgba(34,46,99,.22)}
+.hov-submit-btn:disabled{opacity:.7;cursor:not-allowed;transform:none}
+.hov-form-msg{margin-top:14px;font-size:14px;font-weight:500;min-height:20px;text-align:center}
+.hov-form-msg.success{color:#27ae60}
+.hov-form-msg.error{color:#e74c3c}
+
+/* ================================================================
+   FOOTER
+================================================================ */
+.footer-wrapper{background:linear-gradient(145deg,#08080f,#101026);padding-top:var(--space-xl);color:rgba(255,255,255,.72);overflow:hidden}
+.footer-layout{display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;gap:40px;padding-bottom:var(--space-xl)}
+.footer-widget .widget_title{color:var(--white);font-family:var(--font-serif);font-size:15.5px;margin-bottom:18px;padding-bottom:10px;border-bottom:1.5px solid rgba(201,168,76,.28);font-weight:600}
+.footer-widget .menu li{margin-bottom:9px}
+.footer-widget .menu li a{font-size:13.5px;color:rgba(255,255,255,.62);transition:var(--ease);display:block}
+.footer-widget .menu li a:hover{color:var(--accent);padding-left:5px}
+.footer-address-bar{color:rgba(255,255,255,.55);font-size:12.5px;padding-block:18px;border-top:1px solid rgba(255,255,255,.07);text-align:center;line-height:1.7}
+.footer-address-bar strong{color:rgba(255,255,255,.85)}
+.footer-menu-area{border-top:1px solid rgba(255,255,255,.07);padding-block:18px}
+.footer-menu-list{display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:center}
+.footer-menu-list li a{font-size:12.5px;color:rgba(255,255,255,.55);transition:var(--ease)}
+.footer-menu-list li a:hover{color:var(--accent)}
+.copyright-wrap{background:rgba(0,0,0,.35);padding-block:16px}
+.copyright-text{font-size:12.5px;color:rgba(255,255,255,.45);text-align:center;margin:0}
+.copyright-text a{color:var(--accent)}
+
+/* ================================================================
+   FLOATING BUTTONS
+================================================================ */
+.scroll-top{position:fixed;bottom:28px;right:90px;width:44px;height:44px;background:var(--primary);border-radius:50%;display:none;align-items:center;justify-content:center;cursor:pointer;z-index:990;box-shadow:var(--shadow-md);transition:var(--ease);border:none}
+.scroll-top:hover{background:var(--accent);transform:translateY(-3px)}
+.scroll-top.show{display:flex!important}
+.whats-app-float{position:fixed;bottom:26px;right:26px;z-index:991}
+.whats-app-float img{width:50px;height:50px;border-radius:50%;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:transform var(--ease)}
+.whats-app-float img:hover{transform:scale(1.1)}
+
+/* ================================================================
+   RESPONSIVE
+================================================================ */
+@media(max-width:1199px){
+  .footer-layout{grid-template-columns:1fr 1fr;gap:32px}
+  .hov-award-cards{grid-template-columns:repeat(2,1fr)}
+  .hov-awards-trophy img{max-width:220px}
+}
+@media(max-width:991px){
+  .hov-intro-inner{grid-template-columns:1fr;text-align:center}
+  .hov-intro-logo-wrap{max-width:400px;margin-inline:auto}
+  .hov-social-row{justify-content:center}
+  .hov-vm-item{text-align:left}
+  .hov-brands-grid{grid-template-columns:repeat(2,1fr)}
+  .hov-counters-grid{grid-template-columns:repeat(2,1fr)}
+  .hov-counter-divider{display:none}
+  .hov-awards-grid{grid-template-columns:1fr}
+  .hov-awards-trophy{margin-top:0}
+  .hov-founders-inner{grid-template-columns:1fr;text-align:center}
+  .hov-founders-img{margin:0 auto}
+  .hov-offices-inner{grid-template-columns:1fr;gap:28px}
+  .hov-offices-heading{padding-right:0;border-right:none;border-bottom:1px solid rgba(255,255,255,.12);padding-bottom:24px}
+  .hov-office-block{padding-left:0}
+  .hov-cta-inner{grid-template-columns:1fr}
+  .hov-form-grid{grid-template-columns:repeat(2,1fr)}
+  .hov-hero{min-height:320px}
+}
+@media(max-width:767px){
+  .hov-brands-grid{grid-template-columns:repeat(2,1fr);gap:16px}
+  .hov-counters-grid{grid-template-columns:repeat(2,1fr)}
+  .hov-award-cards{grid-template-columns:1fr}
+  .hov-form-grid{grid-template-columns:1fr}
+  .hov-form-wrap{padding:24px 18px}
+  .footer-layout{grid-template-columns:1fr;gap:24px}
+  .hov-cta-images{grid-template-columns:1fr}
+  .hov-cta-img:nth-child(1){grid-row:auto}
+  .hov-hero{min-height:300px}
+}
+@media(max-width:480px){
+  .hov-counters-grid{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- Progress Bar -->
+<div class="hov-progress-bar" id="progressBar"></div>
+
+<!-- Side Menu Overlay -->
+<div class="sidemenu-overlay" id="sidemenuOverlay"></div>
+
+<!-- Side Menu -->
+<div class="sidemenu-wrapper" id="sidemenuWrapper">
+  <button class="closeButton" id="closeSideMenu"><i class="fas fa-times"></i></button>
+  <div class="widget footer-widget">
+    <div class="widget-about">
+      <div class="footer-logo">
+        <a href="/"><img src="assets/images/logo/PCL-logo.png" alt="Party Cruisers Limited"></a>
+      </div>
+      <p class="about-text">Since 1994, Party Cruisers Limited has been crafting unforgettable experiences and redefining the event landscape across India and the Middle East.</p>
+      <div class="social-btn">
+        <a href="https://www.facebook.com/partycruisersltd" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://wa.me/918433659225" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://youtube.com/@partycruiserslimited9671" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.linkedin.com/company/partycruisersltd/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/partycruisersltd" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://in.pinterest.com/partycruisers/" target="_blank" rel="noopener" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="widget widget_nav_menu footer-widget">
+    <h3 class="widget_title">Brand Divisions</h3>
+    <ul class="menu">
+      <li><a href="/house-of-vivaah">House of Vivaah</a></li>
+      <li><a href="/vows-vachan">Vows Vachan</a></li>
+      <li><a href="/event-factory">Event Factory</a></li>
+    </ul>
+    <h3 class="widget_title" style="margin-top:20px">Quick Links</h3>
+    <ul class="menu">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about-us">About Us</a></li>
+      <li><a href="/privacy-policy">Privacy &amp; Policy</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- Mobile Overlay -->
+<div class="mobile-overlay" id="mobileOverlay"></div>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu-wrapper" id="mobileMenu">
+  <div class="mobile-menu-area">
+    <button class="close-mobile" id="closeMobileMenu"><i class="fas fa-times"></i></button>
+    <div class="mobile-logo">
+      <a href="/"><img src="assets/images/logo/PCL-logo.png" alt="Party Cruisers Limited"></a>
+    </div>
+    <div class="mobile-menu">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about-us" class="active">About Us</a></li>
+        <li><a href="/house-of-vivaah">House of Vivaah</a></li>
+        <li><a href="/vows-vachan">Vows Vachan</a></li>
+        <li><a href="/event-factory">Event Factory</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ NAVBAR ============================================================ -->
+<header class="nav-header">
+  <div class="sticky-wrapper">
+    <div class="menu-area" id="menuArea">
+      <div class="container-fluid">
+        <div class="header-logo">
+          <a href="/"><img id="headerLogo" src="assets/images/logo/Party Cruisers Limited black.png" alt="Party Cruisers Limited"></a>
+        </div>
+        <nav class="main-menu" aria-label="Primary navigation">
+          <ul>
+            <li><a href="/about-us" class="active">About Us</a></li>
+            <li><a href="/house-of-vivaah">House of Vivaah</a></li>
+            <li><a href="/vows-vachan">Vows Vachan</a></li>
+            <li><a href="/event-factory">Event Factory</a></li>
+          </ul>
+        </nav>
+        <div class="nav-right">
+          <button class="icon-btn mobile-toggle" id="openMobileMenu" aria-label="Open menu"><i class="fas fa-bars"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============================================================ HERO ============================================================ -->
+<section class="hov-hero">
+  <div class="container">
+    <div class="hov-hero-content">
+      <span class="hov-sub">Est. 1994 · NSE Listed</span>
+      <h1>About Party Cruisers<br><em>Limited</em></h1>
+      <p class="hov-tagline">Crafting unforgettable experiences and redefining the event landscape — across India and the world.</p>
+      <nav class="hov-breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a>
+        <span class="sep">›</span>
+        <span>About Us</span>
+      </nav>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ INTRO / ABOUT ============================================================ -->
+<section class="hov-intro-section">
+  <div class="container">
+    <div class="hov-intro-inner">
+      <div class="hov-intro-logo-wrap">
+        <img src="assets/images/logo/Party Cruisers Limited black.png" alt="Party Cruisers Limited" loading="lazy">
+      </div>
+      <div class="hov-intro-content">
+        <span class="hov-sub-label">Who We Are</span>
+        <h2>Party Cruisers Limited</h2>
+        <p class="hov-craft">Events · Weddings · Experiences</p>
+        <p>As Party Cruisers Limited, listed on the NSE since 2021, we are a collective that brings you the most luxe events you've experienced — without having to worry if your guests are having an engaging and personalized event.</p>
+        <p>Since 1994, we've expanded to a range of event services apart from our expertise in wedding curation and execution, focused on end-to-end management by working with eminent service providers across India and the Middle East.</p>
+        <div class="hov-vm-row">
+          <div class="hov-vm-item">
+            <div class="vm-icon"><i class="fas fa-binoculars"></i></div>
+            <div>
+              <h5>Our Vision</h5>
+              <p>Become the go-to global destination for all things wedding and events.</p>
+            </div>
+          </div>
+          <div class="hov-vm-item">
+            <div class="vm-icon"><i class="fas fa-bullseye"></i></div>
+            <div>
+              <h5>Our Mission</h5>
+              <p>Structuring and facilitating the global events/wedding industry with a focus on transparency and collaboration.</p>
+            </div>
+          </div>
+        </div>
+        <div class="hov-social-row" aria-label="Follow Party Cruisers Limited">
+          <a href="https://www.facebook.com/partycruisersltd" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/partycruisersltd" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/company/partycruisersltd/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://youtube.com/@partycruiserslimited9671" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ BRAND DIVISIONS ============================================================ -->
+<section class="hov-brands-section">
+  <div class="container">
+    <div class="section-heading-wrap reveal">
+      <span class="hov-sub-label">Our Portfolio</span>
+      <h2>Brand Divisions</h2>
+    </div>
+    <div class="hov-brands-grid">
+      <a href="/house-of-vivaah" class="hov-brand-card card-lift reveal delay-1">
+        <img src="assets/images/logo/vivaah.png" alt="House of Vivaah" loading="lazy">
+      </a>
+      <a href="/vows-vachan" class="hov-brand-card card-lift reveal delay-2">
+        <img src="assets/images/logo/vows-vachan.png" alt="Vows Vachan" loading="lazy">
+      </a>
+      <a href="/event-factory" class="hov-brand-card card-lift reveal delay-3">
+        <img src="assets/images/logo/event-factory.png" alt="Event Factory" loading="lazy">
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ COUNTERS ============================================================ -->
+<section class="hov-counter-section">
+  <div class="container">
+    <div class="hov-counters-grid">
+      <div class="hov-counter-card reveal">
+        <h3><span class="counter-num" data-target="1500">0</span><span class="plus">+</span></h3>
+        <p>Successful Projects</p>
+      </div>
+      <div class="hov-counter-card reveal delay-1">
+        <h3><span class="counter-num" data-target="250">0</span><span class="plus">+</span></h3>
+        <p>Skilled Team Members</p>
+      </div>
+      <div class="hov-counter-card reveal delay-2">
+        <h3><span class="counter-num" data-target="50">0</span><span class="plus">+</span></h3>
+        <p>In-House Services</p>
+      </div>
+      <div class="hov-counter-card reveal delay-3">
+        <h3><span class="counter-num" data-target="650">0</span><span class="plus">+</span></h3>
+        <p>Vendors Onboard</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ AWARDS ============================================================ -->
+<section class="hov-awards-section">
+  <div class="container">
+    <div class="section-heading-wrap reveal">
+      <span class="hov-sub-label">Recognition</span>
+      <h2>Awards &amp; Accolades</h2>
+    </div>
+    <div class="hov-awards-grid">
+      <div class="hov-award-cards">
+        <div class="hov-award-card reveal delay-1">
+          <div class="hov-award-meta"><span class="hov-award-tier tier-bronze">Bronze</span><span class="hov-award-year">2023</span></div>
+          <h4>Haldi Ceremony of the Year</h4>
+          <p>Vivaah — Haldi Na Milege Dobara</p>
+        </div>
+        <div class="hov-award-card reveal delay-2">
+          <div class="hov-award-meta"><span class="hov-award-tier tier-gold">Gold</span><span class="hov-award-year">2023</span></div>
+          <h4>Best Cocktail / Engagement Celebration</h4>
+          <p>Vivaah — Decor Execution</p>
+        </div>
+        <div class="hov-award-card reveal delay-3">
+          <div class="hov-award-meta"><span class="hov-award-tier tier-gold">Gold</span><span class="hov-award-year">2023</span></div>
+          <h4>Best Wedding Celebration</h4>
+          <p>Vivaah — Design</p>
+        </div>
+        <div class="hov-award-card reveal delay-1">
+          <div class="hov-award-meta"><span class="hov-award-tier tier-silver">Silver</span><span class="hov-award-year">2022</span></div>
+          <h4>Post-Wedding Celebration of the Year</h4>
+          <p>Vivaah — Enchanted Forest</p>
+        </div>
+        <div class="hov-award-card reveal delay-2">
+          <div class="hov-award-meta"><span class="hov-award-tier tier-silver">Silver</span><span class="hov-award-year">2022</span></div>
+          <h4>Destination Wedding / Social Event of the Year</h4>
+          <p>Vivaah — Illuminated Garden</p>
+        </div>
+        <div class="hov-award-card reveal delay-3">
+          <div class="hov-award-meta"><span class="hov-award-tier tier-platinum">Platinum</span><span class="hov-award-year">2022</span></div>
+          <h4>Best Sangeet Celebration</h4>
+          <p>Vivaah — Decor Execution</p>
+        </div>
+        <div class="hov-award-card reveal delay-1">
+          <div class="hov-award-meta"><span class="hov-award-tier tier-gold">Gold</span><span class="hov-award-year">2022</span></div>
+          <h4>Best Sangeet Celebration</h4>
+          <p>Vivaah — Design</p>
+        </div>
+        <div class="hov-award-card reveal delay-2">
+          <div class="hov-award-meta"><span class="hov-award-tier tier-platinum">Platinum</span><span class="hov-award-year">2021</span></div>
+          <h4>Best Sangeet Celebration</h4>
+          <p>Vivaah — Decor Execution</p>
+        </div>
+        <div class="hov-award-card reveal delay-3">
+          <div class="hov-award-meta"><span class="hov-award-tier tier-platinum">Platinum</span><span class="hov-award-year">2021</span></div>
+          <h4>Best Wedding Celebration</h4>
+          <p>Vivaah — Decor Execution</p>
+        </div>
+        <div class="hov-award-card reveal delay-1">
+          <div class="hov-award-meta"><span class="hov-award-tier tier-gold">Gold</span><span class="hov-award-year">2020</span></div>
+          <h4>Best Reception / Post Wedding Celebration</h4>
+          <p>Vivaah — Decor Execution</p>
+        </div>
+        <div class="hov-award-card reveal delay-2">
+          <div class="hov-award-meta"><span class="hov-award-tier tier-platinum">Platinum</span><span class="hov-award-year">2020</span></div>
+          <h4>Best Mehendi Celebration</h4>
+          <p>Vivaah — Decor Execution</p>
+        </div>
+        <div class="hov-award-card reveal delay-3">
+          <div class="hov-award-meta"><span class="hov-award-tier tier-runner">Runner Up</span><span class="hov-award-year">2019</span></div>
+          <h4>Trendsetting Decor Execution</h4>
+          <p>Vivaah — Decor Execution</p>
+        </div>
+      </div>
+      <div class="hov-awards-trophy reveal-right">
+        <img src="assets/images/awards.png" alt="PCL Awards" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ TEAM / FOUNDERS ============================================================ -->
+<section class="hov-team-section">
+  <div class="container">
+    <div class="section-heading-wrap reveal">
+      <span class="hov-sub-label">Our People</span>
+      <h2>Our Team</h2>
+    </div>
+    <div class="hov-founders-banner">
+      <div class="hov-founders-inner">
+        <div class="hov-founders-text">
+          <span class="hov-sub-label">Leadership</span>
+          <h2>Founders of PCL</h2>
+          <p class="founders-name">Zuzer &amp; Rachana Lucknowala</p>
+          <p>For over 35 years, Party Cruisers Ltd. has been the heartbeat of our lives, crafting unforgettable experiences and redefining the event landscape. As an NSE-listed company, we've journeyed through challenges and triumphs, always with one goal: to turn visions into spectacular realities. Our legacy is built on innovation, passion, and a relentless drive to lead the industry. This company is not just our work; it's our soul, where every event is a new story, and every success is a shared celebration.</p>
+        </div>
+        <div class="hov-founders-img">
+          <img src="assets/images/Sir n maam.png" alt="Zuzer and Rachana Lucknowala — Founders" loading="lazy">
+        </div>
+      </div>
+    </div>
+    <div class="hov-team-photo reveal">
+      <img src="assets/images/Team photo.png" alt="The PCL Team" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ OFFICES ============================================================ -->
+<section class="hov-offices-section">
+  <div class="container">
+    <div class="hov-offices-inner">
+      <div class="hov-offices-heading reveal-left">
+        <h2>Our Offices</h2>
+      </div>
+      <div class="hov-office-block reveal">
+        <div class="hov-office-sep"></div>
+        <h5>India</h5>
+        <p><strong style="color:rgba(255,255,255,.9)">Mumbai</strong> — Headquarter</p>
+        <p>Pune · Nashik · Goa · Hyderabad · Lucknow · Delhi</p>
+      </div>
+      <div class="hov-office-block reveal delay-2">
+        <div class="hov-office-sep"></div>
+        <h5>Middle East</h5>
+        <p><strong style="color:rgba(255,255,255,.9)">Dubai</strong> — Headquarter</p>
+        <p>Doha · Bahrain · Oman</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ CTA SECTION ============================================================ -->
+<section class="hov-cta-section">
+  <div class="container">
+    <div class="hov-cta-inner">
+      <div class="hov-cta-images reveal-left">
+        <div class="hov-cta-img">
+          <img src="assets/images/share_img-1-1.webp" alt="PCL Events" loading="lazy">
+        </div>
+        <div class="hov-cta-img">
+          <img src="assets/images/share_img-2-1.webp" alt="PCL Events" loading="lazy">
+        </div>
+        <div class="hov-cta-img">
+          <img src="assets/images/share_img-3-1.webp" alt="PCL Events" loading="lazy">
+        </div>
+      </div>
+      <div class="hov-cta-content reveal-right">
+        <span class="hov-sub-label">@party-cruisers-limited</span>
+        <h2>Let's Celebrate Your Best Moments &amp; Events</h2>
+        <p>From intimate gatherings to grand destination weddings, we bring vision to life with passion, precision and elegance.</p>
+        <a href="/contact" class="hov-btn">
+          <i class="fas fa-paper-plane"></i> Contact Us
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ ENQUIRY FORM ============================================================ -->
+<section class="hov-contact-section">
+  <div class="container hov-contact-inner">
+    <div class="hov-contact-heading">
+      <h2>Connect With Us</h2>
+      <p>Tell us about your event and we'll be in touch within 24 hours.</p>
+    </div>
+    <div class="hov-form-wrap hov-form">
+      <form id="hovEnquiryForm" autocomplete="off" novalidate>
+        <input type="hidden" name="enquiry_for" value="About Us — Party Cruisers Limited">
+        <div class="hov-form-grid">
+          <div class="hov-form-group">
+            <label for="hovName">Full Name *</label>
+            <div class="field-wrap"><i class="far fa-user field-icon"></i><input type="text" id="hovName" name="name" placeholder="Enter Full Name" autocomplete="name"></div>
+            <div class="hov-form-error" id="hovNameErr"></div>
+          </div>
+          <div class="hov-form-group">
+            <label for="hovContact">Contact No *</label>
+            <div class="field-wrap"><i class="fas fa-phone-alt field-icon"></i><input type="tel" id="hovContact" name="contact" placeholder="Enter Contact Number" inputmode="numeric"></div>
+            <div class="hov-form-error" id="hovContactErr"></div>
+          </div>
+          <div class="hov-form-group">
+            <label for="hovEmail">Email *</label>
+            <div class="field-wrap"><i class="far fa-envelope field-icon"></i><input type="email" id="hovEmail" name="email" placeholder="Enter Email Address" autocomplete="email"></div>
+            <div class="hov-form-error" id="hovEmailErr"></div>
+          </div>
+          <div class="hov-form-group">
+            <label for="hovLocation">Your Location *</label>
+            <div class="field-wrap"><i class="fas fa-map-marker-alt field-icon"></i><input type="text" id="hovLocation" name="location" placeholder="City / Location of Event"></div>
+            <div class="hov-form-error" id="hovLocationErr"></div>
+          </div>
+          <div class="hov-form-group">
+            <label for="hovDate">Date of Event *</label>
+            <div class="field-wrap"><i class="far fa-calendar field-icon"></i><input type="date" id="hovDate" name="date"></div>
+            <div class="hov-form-error" id="hovDateErr"></div>
+          </div>
+          <div class="hov-form-group">
+            <label for="hovEvent">Event Type *</label>
+            <div class="field-wrap"><i class="fas fa-star field-icon"></i>
+              <select id="hovEvent" name="event">
+                <option value="">Select Event</option>
+                <option value="Wedding">Wedding</option>
+                <option value="Sangeet">Sangeet</option>
+                <option value="Mehendi">Mehendi</option>
+                <option value="Haldi">Haldi</option>
+                <option value="Engagement">Engagement</option>
+                <option value="Corporate Event">Corporate Event</option>
+                <option value="Birthday">Birthday</option>
+                <option value="Reception">Reception</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="hov-form-error" id="hovEventErr"></div>
+          </div>
+          <div class="hov-form-submit">
+            <button type="submit" class="hov-submit-btn" id="hovSubmitBtn">
+              <i class="fas fa-paper-plane"></i><span>Submit Enquiry</span>
+            </button>
+            <div class="hov-form-msg" id="hovFormMsg"></div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ FOOTER ============================================================ -->
+<footer class="footer-wrapper">
+  <div class="container">
+    <div class="footer-layout">
+      <div class="footer-widget">
+        <h3 class="widget_title">Party Cruisers Limited</h3>
+        <p style="font-size:13.5px;color:rgba(255,255,255,.62);line-height:1.75;margin-bottom:18px;">Since 1994, we have been crafting unforgettable experiences and redefining the event landscape across India and the Middle East. NSE-listed since 2021.</p>
+        <div class="social-btn">
+          <a href="https://www.facebook.com/partycruisersltd" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://wa.me/918433659225" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://youtube.com/@partycruiserslimited9671" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.linkedin.com/company/partycruisersltd/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/partycruisersltd" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://in.pinterest.com/partycruisers/" target="_blank" rel="noopener" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+        </div>
+      </div>
+      <div class="footer-widget">
+        <h3 class="widget_title">Brand Divisions</h3>
+        <ul class="menu">
+          <li><a href="/house-of-vivaah">House of Vivaah</a></li>
+          <li><a href="/vows-vachan">Vows Vachan</a></li>
+          <li><a href="/event-factory">Event Factory</a></li>
+        </ul>
+      </div>
+      <div class="footer-widget">
+        <h3 class="widget_title">Business</h3>
+        <ul class="menu">
+          <li><a href="/franchise">Franchise</a></li>
+          <li><a href="/collaboration-and-association">Collaboration &amp; Association</a></li>
+          <li><a href="/partnership-entrepreneurship-program">PEP</a></li>
+          <li><a href="/brand-ambassador">Brand Ambassador</a></li>
+          <li><a href="/career">Career</a></li>
+        </ul>
+      </div>
+      <div class="footer-widget">
+        <h3 class="widget_title">Policy</h3>
+        <ul class="menu">
+          <li><a href="/investor-relation">Investor Relation</a></li>
+          <li><a href="/company-internal-policy">Company Internal Policy</a></li>
+          <li><a href="/privacy-policy">Privacy &amp; Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-address-bar"><strong>Office Address:</strong> 301, 3rd Floor, Raheja Point 1, near Pandit Jawaharlal Nehru Rd, P and T Colony, Vakola, Santacruz East, Mumbai, Maharashtra 400055.</div>
+    <div class="footer-menu-area">
+      <ul class="footer-menu-list">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about-us">About Us</a></li>
+        <li><a href="/testimonials">Testimonials</a></li>
+        <li><a href="/media">Media</a></li>
+        <li><a href="/blogs">Blogs</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="copyright-wrap">
+    <div class="container"><p class="copyright-text">&copy; 2026 <a href="/">Party Cruisers Limited.</a> All Rights Reserved.</p></div>
+  </div>
+</footer>
+
+<!-- Scroll To Top -->
+<button class="scroll-top" id="scrollTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="width:20px;height:20px;"><path d="M12 19V5M5 12l7-7 7 7" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+</button>
+
+<!-- WhatsApp -->
+<a href="https://api.whatsapp.com/send?phone=918433659225" class="whats-app-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <img src="assets/images/whatsapp.png" alt="WhatsApp">
+</a>
+
+<script>
+(function(){"use strict";
+
+/* SCROLL PROGRESS BAR */
+var bar=document.getElementById("progressBar");
+window.addEventListener("scroll",function(){
+  var s=window.scrollY,m=document.documentElement.scrollHeight-window.innerHeight;
+  if(bar)bar.style.width=(m>0?(s/m*100):0)+"%";
+},{passive:true});
+
+/* STICKY HEADER */
+var menuArea=document.getElementById("menuArea");
+window.addEventListener("scroll",function(){
+  if(menuArea)menuArea.classList.toggle("scrolled",window.scrollY>60);
+},{passive:true});
+
+/* MOBILE & SIDE MENU */
+var mobileMenu=document.getElementById("mobileMenu");
+var mobileOverlay=document.getElementById("mobileOverlay");
+var openBtn=document.getElementById("openMobileMenu");
+var closeBtn=document.getElementById("closeMobileMenu");
+function openMobile(){mobileMenu&&mobileMenu.classList.add("open");mobileOverlay&&mobileOverlay.classList.add("active")}
+function closeMobile(){mobileMenu&&mobileMenu.classList.remove("open");mobileOverlay&&mobileOverlay.classList.remove("active")}
+if(openBtn)openBtn.addEventListener("click",openMobile);
+if(closeBtn)closeBtn.addEventListener("click",closeMobile);
+if(mobileOverlay)mobileOverlay.addEventListener("click",closeMobile);
+
+var sideWrapper=document.getElementById("sidemenuWrapper");
+var sideOverlay=document.getElementById("sidemenuOverlay");
+var closeSide=document.getElementById("closeSideMenu");
+function closeSideMenu(){sideWrapper&&sideWrapper.classList.remove("open");sideOverlay&&sideOverlay.classList.remove("active")}
+if(closeSide)closeSide.addEventListener("click",closeSideMenu);
+if(sideOverlay)sideOverlay.addEventListener("click",closeSideMenu);
+
+/* SCROLL TO TOP */
+var scrollTopBtn=document.getElementById("scrollTop");
+window.addEventListener("scroll",function(){if(scrollTopBtn)scrollTopBtn.classList.toggle("show",window.scrollY>400);},{passive:true});
+if(scrollTopBtn)scrollTopBtn.addEventListener("click",function(){window.scrollTo({top:0,behavior:"smooth"})});
+
+/* LOGO ENTRANCE ANIMATION */
+var logo=document.getElementById("headerLogo");
+if(logo){
+  logo.style.opacity="0";logo.style.transform="scale(.9) translateY(8px)";logo.style.filter="blur(3px)";
+  requestAnimationFrame(function(){requestAnimationFrame(function(){
+    logo.style.transition="opacity .5s ease, transform .5s cubic-bezier(.34,1.56,.64,1), filter .5s ease";
+    logo.style.opacity="1";logo.style.transform="scale(1) translateY(0)";logo.style.filter="blur(0)";
+  })});
+}
+
+/* SCROLL REVEAL */
+function initReveal(){
+  var targets=document.querySelectorAll(".reveal,.reveal-left,.reveal-right,.hov-intro-logo-wrap,.hov-intro-content,.hov-form,.hov-contact-heading,.anim-line");
+  if(!targets.length)return;
+  var obs=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add("is-visible");obs.unobserve(e.target)}});
+  },{threshold:.12,rootMargin:"0px 0px -40px 0px"});
+  targets.forEach(function(el){obs.observe(el)});
+}
+initReveal();
+
+/* ANIMATED COUNTERS */
+function animateCounters(){
+  var counters=document.querySelectorAll(".counter-num");
+  var obs=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){
+        var el=e.target;
+        var target=parseInt(el.getAttribute("data-target"),10);
+        var duration=1800;
+        var start=performance.now();
+        obs.unobserve(el);
+        requestAnimationFrame(function step(now){
+          var elapsed=now-start;
+          var progress=Math.min(elapsed/duration,1);
+          var eased=1-Math.pow(1-progress,3);
+          el.textContent=Math.floor(eased*target).toLocaleString();
+          if(progress<1)requestAnimationFrame(step);
+          else el.textContent=target.toLocaleString();
+        });
+      }
+    });
+  },{threshold:.4});
+  counters.forEach(function(c){obs.observe(c)});
+}
+animateCounters();
+
+/* ENQUIRY FORM */
+var form=document.getElementById("hovEnquiryForm");
+var submitBtn=document.getElementById("hovSubmitBtn");
+var formMsg=document.getElementById("hovFormMsg");
+function getVal(id){var el=document.getElementById(id);return el?el.value.trim():""}
+function setErr(id,msg){var el=document.getElementById(id);if(el)el.textContent=msg}
+function clearErrs(){["hovNameErr","hovContactErr","hovEmailErr","hovLocationErr","hovDateErr","hovEventErr"].forEach(function(id){setErr(id,"")})}
+function isEmail(e){return/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e)}
+function isPhone(p){return/^\d{7,15}$/.test(p.replace(/\s/g,""))}
+function validate(){
+  clearErrs();var ok=true;
+  var n=getVal("hovName"),c=getVal("hovContact"),e=getVal("hovEmail"),l=getVal("hovLocation"),d=getVal("hovDate"),ev=getVal("hovEvent");
+  if(!n){setErr("hovNameErr","Full name is required.");ok=false}
+  if(!c){setErr("hovContactErr","Contact number is required.");ok=false}else if(!isPhone(c)){setErr("hovContactErr","Enter a valid phone number.");ok=false}
+  if(!e){setErr("hovEmailErr","Email address is required.");ok=false}else if(!isEmail(e)){setErr("hovEmailErr","Enter a valid email address.");ok=false}
+  if(!l){setErr("hovLocationErr","Event location is required.");ok=false}
+  if(!d){setErr("hovDateErr","Please select an event date.");ok=false}
+  if(!ev){setErr("hovEventErr","Please select an event type.");ok=false}
+  return ok;
+}
+if(form){
+  form.addEventListener("submit",function(e){
+    e.preventDefault();if(!validate())return;
+    submitBtn.disabled=true;submitBtn.querySelector("span").textContent="Sending…";
+    formMsg.textContent="";formMsg.className="hov-form-msg";
+    fetch("/api/enquiry.php",{method:"POST",body:new FormData(form)})
+      .then(function(r){return r.json()})
+      .then(function(d){
+        if(d.success){formMsg.textContent="Thank you! We'll be in touch within 24 hours.";formMsg.classList.add("success");form.reset()}
+        else{formMsg.textContent=d.message||"Something went wrong. Please try again.";formMsg.classList.add("error")}
+      })
+      .catch(function(){formMsg.textContent="Network error. Please WhatsApp us directly.";formMsg.classList.add("error")})
+      .finally(function(){submitBtn.disabled=false;submitBtn.querySelector("span").textContent="Submit Enquiry"});
+  });
+}
+
+})();
+</script>
+</body>
+</html>
